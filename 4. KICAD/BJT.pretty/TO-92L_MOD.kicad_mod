@@ -1,0 +1,183 @@
+(footprint "TO-92L_MOD"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TO-92L leads in-line (large body variant of TO-92), also known as TO-226, wide, drill 0.75mm (see https://www.diodes.com/assets/Package-Files/TO92L.pdf and http://www.ti.com/lit/an/snoa059/snoa059.pdf)")
+	(tags "TO-92L Inline Wide transistor")
+	(property "Reference" "Q1"
+		(at 1.19 -3.56 180)
+		(layer "F.SilkS")
+		(uuid "8515eb7d-b530-4c5a-873b-1d29d53458c6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "2N2222"
+		(at 1.19 2.79 180)
+		(layer "F.Fab")
+		(uuid "a5ad32ac-4430-4985-92f1-1da802ea4ee0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16809a5c-e857-4dd5-84f9-91afc98ce502")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d35c2b53-f4bd-4ff0-a898-85ae025aeccc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Device" "NPN"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1610405e-7abf-413c-a36c-8eee32d3e2f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Type" "GUMMELPOON"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "491958eb-33b8-43cc-bc8e-fdde19f11ec8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" "1=C 2=B 3=E"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1d79b009-421e-4ac4-ba15-c6cae9497457")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3 -1.5)
+		(end -3 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "541db5fd-8adc-44a5-a0c1-8f9e536f2816")
+	)
+	(fp_line
+		(start -3 -1.5)
+		(end 5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bd13dbc5-5f05-412c-9e7b-af947a5601d2")
+	)
+	(fp_line
+		(start 5 1.85)
+		(end -3 1.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3461e14d-d82f-439c-978f-4cd7ef2bfb73")
+	)
+	(fp_line
+		(start 5 1.85)
+		(end 5 -1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dfaf938c-dfc2-43c9-a2ba-b49513605143")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.19 0 180)
+		(layer "F.Fab")
+		(uuid "87aa52a8-3c1e-4177-9566-86ca2728dc73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -1.5 0)
+		(size 2.4 2.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "31e91022-1fb7-4541-8e16-6f209fb74cd3")
+	)
+	(pad "2" thru_hole circle
+		(at 1 0)
+		(size 2.4 2.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c2bcd8c3-bf5a-4d53-bb2a-9b11e009d475")
+	)
+	(pad "3" thru_hole circle
+		(at 3.5 0)
+		(size 2.4 2.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "358d275a-b6bf-4d27-bbc7-a479cdb6327f")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92L_Inline.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
